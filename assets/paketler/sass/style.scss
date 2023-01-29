@@ -1,6 +1,5 @@
 $font-primary: 'Open Sans', Arial, serif;
-// $font-secondary: 'Roboto Slab', Arial, sans-serif;
-// Overrides
+
 $grid-gutter-width: 40px !default; 
 $border-radius-base:  4px !default;
 $padding-base-vertical: 14px !default;
@@ -121,16 +120,6 @@ $form-group-margin-bottom: 30px !default;
 
 
 
-
-/* =======================================================
-*
-*   Template Style 
-*   Edit this section
-*
-* ======================================================= */
-
-// Template Base
-
 body {
   font-family: $font-primary;
   line-height: 1.8;
@@ -210,9 +199,9 @@ figure {
   color: $brand-white;
   border: 2px solid $brand-primary;
   &:hover, &:focus, &:active {
-    // background: lighten($brand-black, 20%)!important;
-    // border-color: lighten($brand-black, 20%)!important;
-    // background: lighten($brand-black, 20%)!important;
+    background: lighten($brand-black, 20%)!important;
+    border-color: lighten($brand-black, 20%)!important;
+    background: lighten($brand-black, 20%)!important;
     background: $brand-secondary !important;
     border-color: $brand-secondary !important;
   }
@@ -340,7 +329,6 @@ figure {
   text-transform: uppercase;
   border: transparent;
   overflow: hidden;
-  // height: 70px;
   padding: 10px 20px;
   position: relative;
   @include transition(.3s);
@@ -373,18 +361,22 @@ figure {
   top: 0;
   left: 0;
   width: 100%;
+  background-color:$brand-dark;
 }
 
 .nav-header{
   position: relative;
   float: left;
   width: 100%;
+  
 }
 
 #fh5co-header-section{
   background: transparent;
   padding:0;
   width: 100%;
+  background-color: #1e2123;
+
   @media screen and (max-width: $screen-sm) {
     padding: 2.4em 0;
   }
