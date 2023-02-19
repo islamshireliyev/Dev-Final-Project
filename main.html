@@ -1,105 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayis Travel</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-    <link rel="icon" href="./assets/images/icon/42938.jpg" >
+    <link rel="icon" href="./assets/images/icon/42938.jpg" />
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="./assets/scss/main.css">
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
 
-</head>
-<body>
-    
-<!-- header section starts  -->
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
 
-<header>
+      <a href="./main.html" class="logo"><span>T</span>ravel</a>
 
-    <div id="menu-bar" class="fas fa-bars"></div>
-
-    <a href="./main.html" class="logo"><span>T</span>ravel</a>
-
-    <nav class="navbar">
+      <nav class="navbar">
         <a href="#home">Əsas səhifə</a>
-        <a href="#book">Sifariş et</a>
-        <a href="#packages">Paketlər</a>
+        <a href="order.html">Sifariş et</a>
+        <a href="packages.html">Paketlər</a>
         <a href="#services">Xidmətlər</a>
         <a href="#gallery">Qalereya</a>
         <a href="#review">Rəylər</a>
-        <a href="#contact">Əlaqə</a>
-    </nav>
+        <a href="contact.html">Əlaqə</a>
+      </nav>
 
-    <div class="icons">
+      <div class="icons">
         <i class="fas fa-search" id="search-btn"></i>
         <i class="fas fa-user" id="login-btn"></i>
-    </div>
+      </div>
 
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="burada axtar...">
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="burada axtar..." />
         <label for="search-bar" class="fas fa-search"></label>
-    </form>
+      </form>
+    </header>
 
-</header>
+    <!-- header section ends -->
 
-<!-- header section ends -->
+    <!-- login form container  -->
 
-<!-- login form container  -->
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
 
-<div class="login-form-container">
-
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="" method="post">
+      <form action="" method="post">
         <h3>Daxil ol</h3>
-        <input type="email" class="box" placeholder="e-poçdunuzu daxil edin">
-        <input type="password" class="box" placeholder="Şifrənizi daxil edin">
-        <input type="submit" value="Daxil olun" class="btn">
-        <input type="checkbox" id="remember">
+        <input type="email" class="box" placeholder="e-poçdunuzu daxil edin" />
+        <input type="password" class="box" placeholder="Şifrənizi daxil edin" />
+        <input type="submit" value="Daxil olun" class="btn" />
+        <input type="checkbox" id="remember" />
         <label for="remember">Məni xatırla</label>
         <p>Parol unutmusunuz? <a href="#">Bura basın</a></p>
         <p>Hesabınız yoxdur? <a href="#">İndi qeydiyyatdan keçin</a></p>
-    </form>
+      </form>
+    </div>
 
-</div>
+    <!-- home section starts  -->
 
-<!-- home section starts  -->
-
-<section class="home" id="home">
-
-    <div class="content">
+    <section class="home" id="home">
+      <div class="content">
         <h3>Macəraya dəyər</h3>
         <p>Bizimlə yeni yerlər kəşf edin,Macəra sizi gözləyir</p>
         <a href="#packages" class="btn">Daha çox kəşf edin</a>
-    </div>
+      </div>
 
-    <div class="controls">
+      <div class="controls">
         <span class="vid-btn active" data-src="assets/images/vid-5.mp4"></span>
         <span class="vid-btn" data-src="assets/images/vid-2.mp4"></span>
         <span class="vid-btn" data-src="assets/images/vid-3.mp4"></span>
         <span class="vid-btn" data-src="assets/images/vid-4.mp4"></span>
         <span class="vid-btn" data-src="assets/images/vid-1.mp4"></span>
-    </div>
+      </div>
 
-    <div class="video-container">
-        <video src="./assets/images/vid-5.mp4" id="video-slider" loop autoplay muted></video>
-    </div>
+      <div class="video-container">
+        <video
+          src="./assets/images/vid-5.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
 
-</section>
+    <!-- home section ends -->
 
-<!-- home section ends -->
+    <!-- book section starts  -->
 
-<!-- book section starts  -->
-
-<section class="book" id="book">
-
-    <h1 class="heading">
+    <section class="book" id="book">
+      <h1 class="heading">
         <span>s</span>
         <span>i</span>
         <span>f</span>
@@ -110,45 +113,41 @@
         <span class="space"></span>
         <span>e</span>
         <span>t</span>
-    </h1>
+      </h1>
 
-    <div class="row">
-
+      <div class="row">
         <div class="image">
-            <img src="./assets/images/book-img.jpg" alt="">
+          <img src="./assets/images/book-img.jpg" alt="" />
         </div>
 
         <form action="">
-            <div class="inputBox">
-                <h3>Hara</h3>
-                <input type="text" placeholder="yer adı">
-            </div>
-            <div class="inputBox">
-                <h3>Nə qədər</h3>
-                <input type="number" placeholder="Qonaq sayı">
-            </div>
-            <div class="inputBox">
-                <h3>başlanğıc</h3>
-                <input type="date">
-            </div>
-            <div class="inputBox">
-                <h3>Bitirmək</h3>
-                <input type="date">
-            </div>
-            <input type="submit" class="btn" value="İndi sifariş et">
+          <label class="inputBox">
+            <h3>Hara</h3>
+            <input type="text" placeholder="yer adı" />
+          </label>
+          <label class="inputBox">
+            <h3>Nə qədər</h3>
+            <input type="number" placeholder="Qonaq sayı" />
+          </label>
+          <label class="inputBox">
+            <h3>başlanğıc</h3>
+            <input type="date" />
+          </label>
+          <label class="inputBox">
+            <h3>Bitirmək</h3>
+            <input type="date" />
+          </label>
+          <input type="submit" class="btn" value="İndi sifariş et" />
         </form>
+      </div>
+    </section>
 
-    </div>
+    <!-- book section ends -->
 
-</section>
+    <!-- packages section starts  -->
 
-<!-- book section ends -->
-
-<!-- packages section starts  -->
-
-<section class="packages" id="packages">
-
-    <h1 class="heading">
+    <section class="packages" id="packages">
+      <h1 class="heading">
         <span>p</span>
         <span>a</span>
         <span>k</span>
@@ -157,171 +156,188 @@
         <span>l</span>
         <span>ə</span>
         <span>r</span>
-    </h1>
+      </h1>
 
-    <div class="box-container">
-
+      <div class="box-container">
         <div class="box">
-            <img src="./assets/images/p-1.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Baki </h3>
-                <p> Mədəniyyət və incəsənətin vəhdət tapdığı,
-                    Avropa ilə Asiyanın birləşdiyi şəhər</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="baki.html" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-1.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Baki</h3>
+            <p>
+              Mədəniyyət və incəsənətin vəhdət tapdığı, Avropa ilə Asiyanın
+              birləşdiyi şəhər
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="baki.html" class="btn">Daha ətraflı</a>
+          </div>
         </div>
 
         <div class="box">
-            <img src="./assets/images/p-2.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Qusar </h3>
-                <p>Qusar – əzəmətli Qafqaz dağlarına açılan qapıdırdir.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="qusar.html" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-2.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Qusar</h3>
+            <p>Qusar – əzəmətli Qafqaz dağlarına açılan qapıdırdir.</p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="qusar.html" class="btn">Daha ətraflı</a>
+          </div>
         </div>
 
         <div class="box">
-            <img src="./assets/images/p-3.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Şəki </h3>
-                <p>Şəki – qədim İpək Yolu üzərində yerləşən və heyrətamiz  şəhərdir.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="seki.html" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-3.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Şəki</h3>
+            <p>
+              Şəki – qədim İpək Yolu üzərində yerləşən və heyrətamiz şəhərdir.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="seki.html" class="btn">Daha ətraflı</a>
+          </div>
         </div>
 
         <div class="box">
-            <img src="./assets/images/p-4.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Lənkaran</h3>
-                <p>Füsünkar təbiət,zəngin tarix.Azərbaycanın ən böyük cənub şəhəri...</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="#" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-4.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Lənkaran</h3>
+            <p>
+              Füsünkar təbiət,zəngin tarix.Azərbaycanın ən böyük cənub şəhəri...
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">Daha ətraflı</a>
+          </div>
         </div>
 
         <div class="box">
-            <img src="./assets/images/p-5.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Gədəbəy </h3>
-                <p>Gədəbəy rayonu tarixi yerləri ilə  Azərbaycanın ən qədim insan məskənlərindən biridir.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="#" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-5.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Gədəbəy</h3>
+            <p>
+              Gədəbəy rayonu tarixi yerləri ilə Azərbaycanın ən qədim insan
+              məskənlərindən biridir.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">Daha ətraflı</a>
+          </div>
         </div>
 
         <div class="box">
-            <img src="./assets/images/p-6.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Qəbələ</h3>
-                <p>Azərbaycanın ən qədim və ən çox turist qəbul edən şəhərlərinin ən başında yer alır</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="#" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-6.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Qəbələ</h3>
+            <p>
+              Azərbaycanın ən qədim və ən çox turist qəbul edən şəhərlərinin ən
+              başında yer alır
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">Daha ətraflı</a>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/p-7.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Naxçıvan </h3>
-                <p>İpək Yolunun üzərində yerləşən Şərqin qapısı adlandırılan İslam mədəniyyətinin paytaxtı .</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="#" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-7.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Naxçıvan</h3>
+            <p>
+              İpək Yolunun üzərində yerləşən Şərqin qapısı adlandırılan İslam
+              mədəniyyətinin paytaxtı .
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">Daha ətraflı</a>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/p-8.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> İsmayıllı </h3>
-                <p>İsmayıllı rayonu Azərbaycanın şimal-qərb hissəsində yerləşən dağ şəhəridir</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="#" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-8.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> İsmayıllı</h3>
+            <p>
+              İsmayıllı rayonu Azərbaycanın şimal-qərb hissəsində yerləşən dağ
+              şəhəridir
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">Daha ətraflı</a>
+          </div>
         </div>
         <div class="box">
-            <img src="./assets/images/p-9.jpg" alt="">
-            <div class="content">
-                <h3> <i class="fas fa-map-marker-alt"></i> Qobustan </h3>
-                <p>Qobustan ən çox məşhur qayaüstü rəsmlər və palçıq vulkanlarının evi olması ilə tanınır.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                </div>
-                <div class="price"> $90.00 <span>$120.00</span> </div>
-                <a href="#" class="btn">Daha ətraflı</a>
+          <img src="./assets/images/p-9.jpg" alt="" />
+          <div class="content">
+            <h3><i class="fas fa-map-marker-alt"></i> Qobustan</h3>
+            <p>
+              Qobustan ən çox məşhur qayaüstü rəsmlər və palçıq vulkanlarının
+              evi olması ilə tanınır.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="far fa-star"></i>
             </div>
+            <div class="price">$90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">Daha ətraflı</a>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- packages section ends -->
+    <!-- services section starts  -->
 
-</section>
-
-<!-- packages section ends -->
-<!-- services section starts  -->
-
-<section class="services" id="services">
-
-    <h1 class="heading">
+    <section class="services" id="services">
+      <h1 class="heading">
         <span>x</span>
         <span>i</span>
         <span>d</span>
@@ -331,52 +347,72 @@
         <span>l</span>
         <span>ə</span>
         <span>r</span>
-    </h1>
+      </h1>
 
-    <div class="box-container">
-
+      <div class="box-container">
         <div class="box">
-            <a href="hotel.html"><i class="fas fa-hotel"></i>
-                <h3>Otellər</h3>
-                <p>Azərbaycanın hər bir yerində istənilən komforta,büdcəyə,istəyə uyğun otellərə buradan baxa bilərsiniz.Hərşey sizin rahatlığınız üçündür</p></a>
+          <a href="hotel.html"
+            ><i class="fas fa-hotel"></i>
+            <h3>Otellər</h3>
+            <p>
+              Azərbaycanın hər bir yerində istənilən komforta,büdcəyə,istəyə
+              uyğun otellərə buradan baxa bilərsiniz.Hərşey sizin rahatlığınız
+              üçündür
+            </p></a
+          >
         </div>
         <div class="box">
-           <a href="./restaurant.html"> <i class="fas fa-utensils"></i>
+          <a href="./restaurant.html">
+            <i class="fas fa-utensils"></i>
             <h3>Restoranlar</h3>
-            <p>Dünyaca məhşur Azərbaycanın zəngin mətbəxinin ləziz teyamlarının dadına buradakı restoranlarda baxa bilərsiniz.</p></a>
+            <p>
+              Dünyaca məhşur Azərbaycanın zəngin mətbəxinin ləziz teyamlarının
+              dadına buradakı restoranlarda baxa bilərsiniz.
+            </p></a
+          >
         </div>
         <div class="box">
-            <i class="fas fa-bullhorn"></i>
-            <h3>Bələdçi</h3>
-            <p>Bələdçilərimiz həm cografı həmdə tarixi biliklərə sahibsdirlər.Sizə ən gözəl şəkildə xidmət etmək bələdçilərimizin borcudur</p>
+          <i class="fas fa-bullhorn"></i>
+          <h3>Bələdçi</h3>
+          <p>
+            Bələdçilərimiz həm cografı həmdə tarixi biliklərə sahibsdirlər.Sizə
+            ən gözəl şəkildə xidmət etmək bələdçilərimizin borcudur
+          </p>
         </div>
         <div class="box">
-            <i class="fas fa-globe-asia"></i>
-            <h3>Ticarət mərkəzləri</h3>
-            <p>Gündəlik həyatımızı ticarət mərkəzləri,butiklər olmadan təsəvvür etmək qeyri mümkündür.Buradan sizə münasib istənilən ticarət mərkəzini tapa bilərsiniz </p>
+          <i class="fas fa-globe-asia"></i>
+          <h3>Ticarət mərkəzləri</h3>
+          <p>
+            Gündəlik həyatımızı ticarət mərkəzləri,butiklər olmadan təsəvvür
+            etmək qeyri mümkündür.Buradan sizə münasib istənilən ticarət
+            mərkəzini tapa bilərsiniz
+          </p>
         </div>
         <div class="box">
-            <i class="fas fa-plane"></i>
-            <h3>Nəqliyyat</h3>
-            <p>Gedəcəyiniz yeri siz təyin edin gerisini bizə buraxın.Sizin üçün ən qisa vaxtda,ən təhlükəsiz nəqliyyatı təmin edirik </p>
+          <i class="fas fa-plane"></i>
+          <h3>Nəqliyyat</h3>
+          <p>
+            Gedəcəyiniz yeri siz təyin edin gerisini bizə buraxın.Sizin üçün ən
+            qisa vaxtda,ən təhlükəsiz nəqliyyatı təmin edirik
+          </p>
         </div>
         <div class="box">
-            <i class="fas fa-hiking"></i>
-            <h3>Macəralar</h3>
-            <p>Gözəl və maraqlı istirahətinizə birazda macəra qatmaq istəyirsinizsə buraya keçid edərək macəra ilə dolu yerlərlə tanış ola bilərsiniz</p>
+          <i class="fas fa-hiking"></i>
+          <h3>Macəralar</h3>
+          <p>
+            Gözəl və maraqlı istirahətinizə birazda macəra qatmaq istəyirsinizsə
+            buraya keçid edərək macəra ilə dolu yerlərlə tanış ola bilərsiniz
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- services section ends -->
 
-</section>
+    <!-- gallery section starts  -->
 
-<!-- services section ends -->
-
-<!-- gallery section starts  -->
-
-<section class="gallery" id="gallery">
-
-    <h1 class="heading">
+    <section class="gallery" id="gallery">
+      <h1 class="heading">
         <span>g</span>
         <span>a</span>
         <span>l</span>
@@ -385,270 +421,296 @@
         <span>e</span>
         <span>y</span>
         <span>a</span>
-    </h1>
+      </h1>
 
-    <div class="box-container">
+      <div class="box-container">
+        <div class="box">
+          <img
+            src="./assets/images/g-1.jpg"
+            alt="https://www.instagram.com/p/CmjkBtgMOWj/?utm_source=ig_web_copy_link"
+          />
+          <div class="content">
+            <h3>Şahdağ macərası</h3>
+            <p>
+              Heyrətamiz dərəcədə gözəl, sanki zamandan gizlədilmiş cənnət olan
+              Şahdağ insanlara unudulmayacaq təəssüratlar bağışlayır.
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-2.jpg" alt="" />
+          <div class="content">
+            <h3>Runaway Hause</h3>
+            <p>
+              İsmayıllının Qalacıq kəndində yerləşən bu yer şəhərdən,səs küydən
+              uzaqlaşıb dinclik tapmaq üçün əla bir yerdir.
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-3.jpg" alt="" />
+          <div class="content">
+            <h3>Xalxal şəlaləsi</h3>
+            <p>
+              Oğuz rayonunun Xalxal kəndində yerləşən bu şəlalə insan əli ilə
+              suni şəkildə duzələrək ayrı bir gözəllık bəxş edir
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-4.jpg" alt="" />
+          <div class="content">
+            <h3>İçərişəhər</h3>
+            <p>
+              Şirvanşahlar dövləti zamanında esası qoyulan bu şəhər 100 illiklər
+              keçməsinə baxmayaraq hələdə öz əzəmətini saxlayır
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-5.jpg" alt="" />
+          <div class="content">
+            <h3>Şəki Xansarayı</h3>
+            <p>
+              XVIII əsr Azərbaycan memarlığının incilərindən sayılan Şəki Xan
+              sarayı həm də özünəməxsus estetikası olan divar rəsmləri ilə
+              məşhurdur.
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-6.jpg" alt="" />
+          <div class="content">
+            <h3>Qizilağac qoruğu</h3>
+            <p>
+              Qızılağac Dövlət Təbiət Qoruğu respublikamızda sahəsinə görə
+              birinci, yaranma tarixinə görə isə üçüncü qoruqdur.
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-7.jpg" alt="" />
+          <div class="content">
+            <h3>Xanbulan kəndi</h3>
+            <p>
+              Kənd meşəliklə əhatə olunub və burada istirahət mərkəzləri
+              fəaliyyət göstərir. Xanbulan gölü isə görənləri heyran edir.
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-8.jpg" alt="" />
+          <div class="content">
+            <h3>Ləzə kəndi</h3>
+            <p>
+              Laza kəndi Qafqaz sıra dağlarının şimal-şərqində dəniz
+              səviyyəsindən 4242m hündürlükdə yerləşən kəntdir
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/images/g-9.jpg" alt="" />
+          <div class="content">
+            <h3>Katex, Balakən</h3>
+            <p>
+              Katex kəndi Azərbaycanın qədim yaşayış məskənlərindən
+              biridir.Kənddəki Katexçay şəlaləsi isə Azərbaycanda ən məşhur
+              şəlalələrdən biridir
+            </p>
+            <a href="#" class="btn">Daha çox</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <div class="box">
-            <img src="./assets/images/g-1.jpg" alt="https://www.instagram.com/p/CmjkBtgMOWj/?utm_source=ig_web_copy_link">
-            <div class="content">
-                <h3>Şahdağ macərası</h3>
-                <p> Heyrətamiz dərəcədə gözəl, sanki zamandan gizlədilmiş cənnət olan Şahdağ insanlara unudulmayacaq təəssüratlar bağışlayır. </p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-2.jpg" alt="">
-            <div class="content">
-                <h3>Runaway Hause</h3>
-                <p>İsmayıllının Qalacıq kəndində yerləşən bu yer şəhərdən,səs küydən uzaqlaşıb dinclik tapmaq üçün əla bir yerdir.</p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-3.jpg" alt="">
-            <div class="content">
-                <h3>Xalxal şəlaləsi</h3>
-                <p>Oğuz rayonunun Xalxal kəndində yerləşən bu şəlalə insan əli ilə suni şəkildə duzələrək ayrı bir gözəllık bəxş edir</p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-4.jpg" alt="">
-            <div class="content">
-                <h3>İçərişəhər</h3>
-                <p>Şirvanşahlar dövləti zamanında esası qoyulan bu şəhər 100 illiklər keçməsinə baxmayaraq hələdə öz əzəmətini saxlayır </p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-5.jpg" alt="">
-            <div class="content">
-                <h3>Şəki Xansarayı</h3>
-                <p>XVIII əsr Azərbaycan memarlığının incilərindən sayılan Şəki Xan sarayı həm də özünəməxsus estetikası olan divar rəsmləri ilə məşhurdur.
-                </p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-6.jpg" alt="">
-            <div class="content">
-                <h3>Qizilağac qoruğu</h3>
-                <p>Qızılağac Dövlət Təbiət Qoruğu respublikamızda sahəsinə görə birinci, yaranma tarixinə görə isə üçüncü qoruqdur.</p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-7.jpg" alt="">
-            <div class="content">
-                <h3>Xanbulan kəndi</h3>
-                <p>Kənd meşəliklə əhatə olunub və burada istirahət mərkəzləri fəaliyyət göstərir. Xanbulan gölü isə görənləri heyran edir.</p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-8.jpg" alt="">
-            <div class="content">
-                <h3>Ləzə kəndi</h3>
-                <p>Laza kəndi Qafqaz sıra dağlarının şimal-şərqində dəniz səviyyəsindən 4242m hündürlükdə yerləşən kəntdir</p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./assets/images/g-9.jpg" alt="">
-            <div class="content">
-                <h3> Katex, Balakən</h3>
-                <p>Katex kəndi Azərbaycanın qədim yaşayış məskənlərindən biridir.Kənddəki Katexçay şəlaləsi isə Azərbaycanda ən məşhur şəlalələrdən biridir</p>
-                <a href="#" class="btn">Daha çox</a>
-            </div>
-        </div>
+    <!-- gallery section ends -->
 
-    </div>
+    <!-- review section starts  -->
 
-</section>
-
-<!-- gallery section ends -->
-
-<!-- review section starts  -->
-
-<section class="review" id="review">
-
-    <h1 class="heading">
+    <section class="review" id="review">
+      <h1 class="heading">
         <span>r</span>
         <span>ə</span>
         <span>y</span>
         <span>l</span>
         <span>ə</span>
         <span>r</span>
-    </h1>
+      </h1>
 
-    <div class="swiper-container review-slider">
-
+      <div class="swiper-container review-slider">
         <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="./assets/images/pic1.png" alt="">
-                    <h3>Kamran Abdullayev</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./assets/images/pic1.png" alt="" />
+              <h3>Kamran Abdullayev</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="./assets/images/pic2.png" alt="">
-                    <h3>Raguf Mehdiyev</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./assets/images/pic2.png" alt="" />
+              <h3>Raguf Mehdiyev</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="./assets/images/pic3.png" alt="">
-                    <h3>İslam Mirzəyev</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./assets/images/pic3.png" alt="" />
+              <h3>İslam Mirzəyev</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
             </div>
-            <div class="swiper-slide">
-                <div class="box">
-                    <img src="./assets/images/pic4.png" alt="">
-                    <h3>Seyrulla Abdullayev</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum asperiores dolorum enim sint quod ipsam distinctio molestias consectetur ducimus beatae, reprehenderit exercitationem!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="./assets/images/pic4.png" alt="" />
+              <h3>Seyrulla Abdullayev</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                adipisci quisquam sunt nesciunt fugiat odit minus illum
+                asperiores dolorum enim sint quod ipsam distinctio molestias
+                consectetur ducimus beatae, reprehenderit exercitationem!
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- review section ends -->
 
-</section>
+    <!-- contact section starts  -->
 
-<!-- review section ends -->
-
-<!-- contact section starts  -->
-
-<section class="contact" id="contact">
-    
-    <h1 class="heading">
+    <section class="contact" id="contact">
+      <h1 class="heading">
         <span>ə</span>
         <span>l</span>
         <span>a</span>
         <span>q</span>
         <span>ə</span>
-    </h1>
+      </h1>
 
-    <div class="row">
-
+      <div class="row">
         <div class="image">
-            <img src="./assets/images/contact-img.svg" alt="">
+          <img src="./assets/images/contact-img.svg" alt="" />
         </div>
 
         <form action="">
-            <div class="inputBox">
-                <input type="text" placeholder="ad">
-                <input type="email" placeholder="e-poct">
-            </div>
-            <div class="inputBox">
-                <input type="number" placeholder="nömrə">
-                <input type="text" placeholder="mövzu">
-            </div>
-            <textarea placeholder="mesaj" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn" value="mesaj göndərin">
+          <div class="inputBox">
+            <input type="text" placeholder="ad" />
+            <input type="email" placeholder="e-poct" />
+          </div>
+          <div class="inputBox">
+            <input type="number" placeholder="nömrə" />
+            <input type="text" placeholder="mövzu" />
+          </div>
+          <textarea
+            placeholder="mesaj"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input type="submit" class="btn" value="mesaj göndərin" />
         </form>
+      </div>
+    </section>
 
-    </div>
-    
-</section>
+    <!-- contact section ends -->
 
-<!-- contact section ends -->
+    <!-- footer section  -->
 
-
-<!-- footer section  -->
-
-<section class="footer">
-
-    <div class="box-container">
-
+    <section class="footer">
+      <div class="box-container">
         <div class="box">
-            <h3>Haqqimizda</h3>
-            <p>.</p>
+          <h3>Haqqimizda</h3>
+          <p>.</p>
         </div>
         <div class="box">
-            <h3>Filiallar</h3>
-            <a href="#">Baki</a>
-            <a href="#">Qusar</a>
-            <a href="#">Gəncə</a>
-            <a href="#">Naxçivan</a>
+          <h3>Filiallar</h3>
+          <a href="#">Baki</a>
+          <a href="#">Qusar</a>
+          <a href="#">Gəncə</a>
+          <a href="#">Naxçivan</a>
         </div>
         <div class="box">
-            <h3>Bağlantılar</h3>
-            <a href="#">Əsas səhifə</a>
-            <a href="#">Sifariş</a>
-            <a href="#">Paketlər</a>
-            <a href="#">Servislər</a>
-            <a href="#">Qaıereya</a>
-            <a href="#">Rəylər</a>
-            <a href="#">Əlaqə </a>
+          <h3>Bağlantılar</h3>
+          <a href="#">Əsas səhifə</a>
+          <a href="#">Sifariş</a>
+          <a href="#">Paketlər</a>
+          <a href="#">Servislər</a>
+          <a href="#">Qaıereya</a>
+          <a href="#">Rəylər</a>
+          <a href="#">Əlaqə </a>
         </div>
         <div class="box">
-            <h3>Bizi izlə</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">twitter</a>
-            <a href="#">linkedin</a>
+          <h3>Bizi izlə</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
         </div>
+      </div>
 
-    </div>
+      <h1 class="credit">
+        <span> Islam Shireliyev</span> tərəfindən yaradilib| Bütün Hüquqlar
+        Qorunur!
+      </h1>
+    </section>
 
-    <h1 class="credit"> <span> Islam Shireliyev</span> tərəfindən yaradilib| Bütün Hüquqlar Qorunur! </h1>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<!-- custom js file link  -->
-<script src="./assets/js/script.js"></script>
-
-</body>
+    <!-- custom js file link  -->
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>

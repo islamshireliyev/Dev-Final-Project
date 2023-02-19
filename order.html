@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayis Travel</title>
+
+    <!--Order STYLE CSS -->
+    <link rel="stylesheet" href="assets/order/css/style.css" />
+
+    <!-- MATERIAL DESIGN ICONIC FONT -->
+    <link
+      rel="stylesheet"
+      href="assets/order/fonts/material-design-iconic-font/css/material-design-iconic-font.css"
+    />
+
+    <!-- DATE-PICKER -->
+    <link
+      rel="stylesheet"
+      href="assets/order/vendor/date-picker/css/datepicker.min.css"
+    />
+
+    <!-- LINEARICONS -->
+    <link rel="stylesheet" href="assets/order/fonts/linearicons/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="icon" href="./assets/images/icon/42938.jpg" />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="./assets/scss/main.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header>
+      <div id="menu-bar" class="fas fa-bars"></div>
+
+      <a href="./main.html" class="logo"><span>T</span>ravel</a>
+
+      <nav class="navbar">
+        <a href="main.html">Əsas səhifə</a>
+        <a href="order.html">Sifariş et</a>
+        <a href="packages.html">Paketlər</a>
+        <a href="#services">Xidmətlər</a>
+        <a href="#gallery">Qalereya</a>
+        <a href="#review">Rəylər</a>
+        <a href="contact.html">Əlaqə</a>
+      </nav>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+      </div>
+
+      <form action="" class="search-bar-container">
+        <input type="search" id="search-bar" placeholder="burada axtar..." />
+        <label for="search-bar" class="fas fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login form container  -->
+
+    <div class="login-form-container">
+      <i class="fas fa-times" id="form-close"></i>
+
+      <form action="" method="post">
+        <h3>Daxil ol</h3>
+        <input type="email" class="box" placeholder="e-poçdunuzu daxil edin" />
+        <input type="password" class="box" placeholder="Şifrənizi daxil edin" />
+        <input type="submit" value="Daxil olun" class="btn" />
+        <input type="checkbox" id="remember" />
+        <label for="remember">Məni xatırla</label>
+        <p>Parol unutmusunuz? <a href="#">Bura basın</a></p>
+        <p>Hesabınız yoxdur? <a href="#">İndi qeydiyyatdan keçin</a></p>
+      </form>
+    </div>
+
+    <div class="wrapper">
+      <div class="inner">
+        <div class="image-holder">
+          <img src="assets/order/images/form-wizard.jpg" alt="" />
+          <h3>Rezerv Edin</h3>
+        </div>
+        <div id="wizard">
+          <!-- SECTION 1 -->
+          <h4>Tarixi seçin</h4>
+          <section>
+            <div class="form-row">
+              <div class="form-holder">
+                <input
+                  type="text"
+                  class="form-control datepicker-here pl-85"
+                  data-language="en"
+                  data-date-format="dd - m - yyyy"
+                  id="dp1"
+                />
+                <span class="lnr lnr-chevron-down"></span>
+                <span class="placeholder">Gəliş:</span>
+              </div>
+              <div class="form-holder">
+                <input
+                  type="text"
+                  class="form-control datepicker-here pl-96"
+                  data-language="en"
+                  data-date-format="dd - m - yyyy"
+                  id="dp2"
+                />
+                <span class="lnr lnr-chevron-down"></span>
+                <span class="placeholder">Gediş :</span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="select">
+                <div class="form-holder">
+                  <div class="select-control">Müddət :</div>
+                  <span class="lnr lnr-chevron-down"></span>
+                </div>
+                <ul class="dropdown">
+                  <li rel="1 Night">1 Gecə</li>
+                  <li rel="2 Night">2 Gecə</li>
+                  <li rel="3 Night">3 Gecə</li>
+                  <li rel="4 Night">4 Gecə</li>
+                  <li rel="5 Night">5 Gecə</li>
+                </ul>
+              </div>
+              <div class="select">
+                <div class="form-holder">
+                  <div class="select-control">Otaq :</div>
+                  <span class="lnr lnr-chevron-down"></span>
+                </div>
+                <ul class="dropdown">
+                  <li rel="1 Room">1 Otaq</li>
+                  <li rel="2 Room">2 Otaq</li>
+                  <li rel="3 Room">3 Otaq</li>
+                  <li rel="4 Room">4 Otaq</li>
+                  <li rel="5 Room">5 Otaq</li>
+                </ul>
+              </div>
+            </div>
+
+            <button class="forward">
+              Davam edin
+              <i class="zmdi zmdi-long-arrow-right"></i>
+            </button>
+          </section>
+
+          <!-- SECTION 2 -->
+          <h4>Otaq Seçin</h4>
+          <section class="section-style">
+            <div class="form-wrapper">
+              <div class="form-row">
+                <div class="form-holder w-100">
+                  <input
+                    type="text"
+                    class="form-control datepicker-here"
+                    data-language="en"
+                    data-date-format="dd M yyyy"
+                    id="dp3"
+                  />
+                  <span class="lnr lnr-calendar-full"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-holder w-100">
+                  <input
+                    type="text"
+                    class="form-control datepicker-here"
+                    data-language="en"
+                    data-date-format="dd M yyyy"
+                    id="dp4"
+                  />
+                  <span class="lnr lnr-calendar-full"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Otaq 1 :</label>
+                <div class="form-row">
+                  <div class="select mr-20">
+                    <div class="form-holder">
+                      <div class="select-control">1 Böyük</div>
+                      <span class="lnr lnr-chevron-down"></span>
+                    </div>
+                    <ul class="dropdown">
+                      <li rel="1 Adult">1 Böyük</li>
+                      <li rel="2 Adults">2 Böyük</li>
+                      <li rel="3 Adults">3 Böyük</li>
+                    </ul>
+                  </div>
+
+                  <div class="select">
+                    <div class="form-holder">
+                      <div class="select-control">Uşaq</div>
+                      <span class="lnr lnr-chevron-down"></span>
+                    </div>
+                    <ul class="dropdown">
+                      <li rel="1 Room">Uşaq yox</li>
+                      <li rel="1 Child">1 Uşaq</li>
+                      <li rel="2 Children">2 Uşaq</li>
+                      <li rel="3 Children">3 Uşaq</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="">Otaq 2 :</label>
+                <div class="form-row">
+                  <div class="select mr-20">
+                    <div class="form-holder">
+                      <div class="select-control">1 Böyük</div>
+                      <span class="lnr lnr-chevron-down"></span>
+                    </div>
+                    <ul class="dropdown">
+                      <li rel="1 Adult">1 Böyük</li>
+                      <li rel="2 Adults">2 Böyük</li>
+                      <li rel="3 Adults">3 Böyük</li>
+                    </ul>
+                  </div>
+
+                  <div class="select">
+                    <div class="form-holder">
+                      <div class="select-control">Uşaq yox</div>
+                      <span class="lnr lnr-chevron-down"></span>
+                    </div>
+                    <ul class="dropdown">
+                      <li rel="1 Room">Uşaq yox</li>
+                      <li rel="1 Child">1 Uşaq</li>
+                      <li rel="2 Children">2 Uşaq</li>
+                      <li rel="3 Children">3 Uşaq</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <button class="forward">
+                Sifarış edin
+                <i class="zmdi zmdi-long-arrow-right"></i>
+              </button>
+            </div>
+          </section>
+
+          <!-- SECTION 3 -->
+          <h4>Rezervasiya Edin</h4>
+          <section>
+            <div class="form-row">
+              <div class="form-holder">
+                <input type="text" class="form-control" placeholder="Ad:" />
+              </div>
+              <div class="form-holder">
+                <input type="text" class="form-control" placeholder="Soyad :" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-holder">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Telefon :"
+                />
+              </div>
+              <div class="form-holder">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e-poçt :"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-holder w-100">
+                <input type="text" class="form-control" placeholder="Ünvan :" />
+              </div>
+            </div>
+            <div class="form-row mb-21">
+              <div class="form-holder w-100">
+                <textarea
+                  name=""
+                  id=""
+                  class="form-control"
+                  style="height: 79px"
+                  placeholder="Xüsusi Tələblər:"
+                ></textarea>
+              </div>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" /> Mən şərtləri
+                <a href="#">yoxladım və qəbul edirəm</a>
+                <span class="checkmark"></span>
+              </label>
+            </div>
+
+            <a href="#"
+              ><button class="forward" style="width: 195px; margin-top: 44px">
+                E-poçtla rezerv et>
+              </button></a
+            >
+          </section>
+
+          <!-- SECTION 4 -->
+          <!-- <h4>Təsdiq</h4>
+	                <section class="section-style">
+						<div class="board-wrapper">
+                			<div class="board-inner">
+                				<div class="board-item">
+                					giriş :
+                					<span>2-5-2018</span>
+                				</div>
+                				<div class="board-item">
+                					Check Out :
+                					<span>8-5-2018</span>
+                				</div>
+                			</div>
+                		</div>
+                		<div class="pay-wrapper">
+                			<div class="bill">
+	                			<div class="bill-cell">
+	                				<div class="bill-item">
+		            					<div class="bill-unit">
+		            						Room 1 :  <span>Small Room</span>
+		            					</div>
+		            					<span class="price">$34</span>
+		            				</div>
+		            				<div class="bill-item people">
+		            					<div class="bill-unit">
+		            						Adult : <span>2</span>
+		            					</div>
+		            					<div class="bill-unit">
+		            						Children : <span>0</span>
+		            					</div>
+		            				</div>
+	                			</div>
+	            				<div class="bill-cell" style="margin-bottom: 13px">
+	                				<div class="bill-item">
+		            					<div class="bill-unit">
+		            						Room 2 :  <span>Luxury Room</span>
+		            					</div>
+		            					<span class="price">$23</span>
+		            				</div>
+		            				<div class="bill-item people">
+		            					<div class="bill-unit">
+		            						Adult : <span>4</span>
+		            					</div>
+		            					<div class="bill-unit">
+		            						Children : <span>1</span>
+		            					</div>
+		            				</div>
+		            				<div class="bill-item service">
+		            					<div class="bill-unit">
+		            						Rooms & Services :
+		            					</div>
+		            					<span class="price">$80</span>
+		            				</div>
+	                			</div>
+	                			<div class="bill-cell">
+	                				<div class="bill-item vat">
+		            					<div class="bill-unit">
+		            						Vat 8% :
+		            					</div>
+		            					<span class="price">$08</span>
+		            				</div>
+		            				<div class="bill-item total-price">
+		            					<div class="bill-unit">
+		            						Total Price :
+		            					</div>
+		            					<span class="price">$88</span>
+		            				</div>
+		            				<div class="checkbox-circle">
+										<label>
+											<input type="radio" name="payment" value="full payment" checked> Full Payment<br>
+											<span class="checkmark"></span>
+										</label>
+										<label>
+											<input type="radio" name="payment" value="10% Deposit"> 10% Deposit
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="bill-item total">
+		            					<div class="bill-unit">
+		            						<span>20% Deposit</span>
+		            						Pay the rest on arrival
+		            					</div>
+		            					<span class="price">$78</span>
+		            				</div>
+	                			</div>
+	            			</div>
+	            			<button style="width: 195px; margin-top: 45px;">Confirmation
+								<i class="zmdi zmdi-long-arrow-right"></i>
+							</button>
+                		</div>
+	                </section> -->
+        </div>
+      </div>
+    </div>
+    <!-- footer section  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Haqqimizda</h3>
+          <p>.</p>
+        </div>
+        <div class="box">
+          <h3>Filiallar</h3>
+          <a href="#">Baki</a>
+          <a href="#">Qusar</a>
+          <a href="#">Gəncə</a>
+          <a href="#">Naxçivan</a>
+        </div>
+        <div class="box">
+          <h3>Bağlantılar</h3>
+          <a href="#">Əsas səhifə</a>
+          <a href="#">Sifariş</a>
+          <a href="#">Paketlər</a>
+          <a href="#">Servislər</a>
+          <a href="#">Qaıereya</a>
+          <a href="#">Rəylər</a>
+          <a href="#">Əlaqə </a>
+        </div>
+        <div class="box">
+          <h3>Bizi izlə</h3>
+          <a href="#">facebook</a>
+          <a href="#">instagram</a>
+          <a href="#">twitter</a>
+          <a href="#">linkedin</a>
+        </div>
+      </div>
+
+      <h1 class="credit">
+        <span> Islam Shireliyev</span> tərəfindən yaradilib| Bütün Hüquqlar
+        Qorunur!
+      </h1>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="./assets/js/script.js"></script>
+
+    <script src="assets/order/js/jquery-3.3.1.min.js"></script>
+
+    <!-- JQUERY STEP -->
+    <script src="assets/order/js/jquery.steps.js"></script>
+
+    <!-- DATE-PICKER -->
+    <script src="assets/order/vendor/date-picker/js/datepicker.js"></script>
+    <script src="assets/order/vendor/date-picker/js/datepicker.en.js"></script>
+
+    <script src="assets/order/js/main.js"></script>
+    <!-- Template created and distributed by Colorlib -->
+  </body>
+</html>
